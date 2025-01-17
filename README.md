@@ -24,6 +24,7 @@ transactions at markets, and simulates battles against enemies.
 The Tile class represents a unit on the 2D board. Each tile has a type that designates it as an inaccessible tile, market tile, or common tile. The Board class represents a 2D array
 of Tile objects that emulates a fantasy world for the party to traverse on. The Tuple class provides a simple 2-tuple structure for storing the party coordinates on the grid.
 
+<pre>
 +---+
 | X | The party is located on the tile with an 'X' on it
 +---+
@@ -39,6 +40,7 @@ of Tile objects that emulates a fantasy world for the party to traverse on. The 
 +---+
 | I | Inaccessible tile: The party cannot traverse on these tiles
 +---+
+</pre>
 
 The CreatureBehavior interface contains abstract methods, such as attack(), dodge(), and takeDamage(), which all creatures -- heroes and monsters alike -- share in their behavior.
 
@@ -104,23 +106,23 @@ that scales off of the number and level of monsters they defeated, and level up 
 
 Commands:
 
-General
--------
-W/w: Move up
-A/a: Move left
-S/s: Move down
-D/d: Move right
-Q/q: Quit game
-I/i: Show party information
-M/m: Enter market (when on Market tile)
-O/o: Show map
+General\
+-------\
+W/w: Move up\
+A/a: Move left\
+S/s: Move down\
+D/d: Move right\
+Q/q: Quit game\
+I/i: Show party information\
+M/m: Enter market (when on Market tile)\
+O/o: Show map\
 P/p: Show inventory
 
-In-Combat
----------
-A/a: Attack
-P/p: Access inventory to cast spell, equip weapon/armor, or use potion
-I/i: Show party information
+In-Combat\
+---------\
+A/a: Attack\
+P/p: Access inventory to cast spell, equip weapon/armor, or use potion\
+I/i: Show party information\
 X/x: Pass turn
 
 Note that character creation, transactions at markets, targeting during combat, and more rely on inputting an index. Options will be listed with a numerical index, and the user will be
@@ -131,7 +133,7 @@ asked to input a numerical index to indicate which option they want to select.
 
 Example Output (from combat):
 
-
+<pre>
 Output: STAND GUARD! AN ENEMY HAS APPEARED!
 Output: -----------------------------------
 
@@ -178,3 +180,4 @@ Output: Gaerdal Ironhand attacks Blinky for 312.5 damage!
 Output: Blinky faints!
 Output: Victory!
 Output: Gaerdal Ironhand gains 100 gold and 1 EXP!
+</pre>
